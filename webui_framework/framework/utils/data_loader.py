@@ -1,0 +1,10 @@
+from pathlib import Path
+import yaml
+
+
+class DataLoader:
+    @staticmethod
+    def load_yaml(path: str | Path) -> dict:
+        file_path = Path(path)
+        with file_path.open("r", encoding="utf-8") as f:
+            return yaml.safe_load(f) or {}
