@@ -1,0 +1,7 @@
+valid_cases:
+  - case_id: login_ok_01
+    username: user_a
+    password: pass_a
+  - case_id: login_ok_02
+    username: user_b
+    password: pass_b

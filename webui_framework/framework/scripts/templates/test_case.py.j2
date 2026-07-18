@@ -1,0 +1,6 @@
+import pytest
+
+
+def test_{{ module_name }}_smoke(page):
+    page.set_content("<h1>{{ module_name }}</h1>")
+    assert page.locator("h1").inner_text() == "{{ module_name }}"
